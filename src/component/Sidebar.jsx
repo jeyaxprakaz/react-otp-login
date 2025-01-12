@@ -15,7 +15,7 @@ const Sidebar = ({ children }) => {
         <ul className="list-unstyled" style={{textAlign:"center"}}>
           <li className="py-2 px-3 hover-effect">Home</li>
           <li className="py-2 px-3 hover-effect">Settings</li>
-          <button className="btn btn-danger my-2" onClick={handleLogout}>
+          <button className="btn btn-danger my-2" onClick={handleLogin}>
           Logout
         </button>
         </ul>
