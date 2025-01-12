@@ -25,4 +25,4 @@ const Sidebar = ({ children }) => {
   );
 };
 
-export default Sidebar;
+export default Sidebar; 
