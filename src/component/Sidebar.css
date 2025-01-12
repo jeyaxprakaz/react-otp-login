@@ -3,9 +3,8 @@
 }
 
 .sidebar {
-    height: 100%; /* Ensure the sidebar takes up the full height */
+    height: 100%; 
     /* position: fixed; */
-     /* Fix the sidebar to the left */
   }
   
   .sidebar ul {
@@ -42,6 +41,10 @@
     color: #ffc107;
   }
   
+  .col-md-4{
+    height: 15rem;
+  }
+
   .card-body{
-    height: 10rem;
+    height: 100%;
   }

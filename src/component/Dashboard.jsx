@@ -15,7 +15,6 @@ import {
   Legend,
   ArcElement, // For Pie Chart
 } from "chart.js";
-// import { useNavigate } from "react-router-dom";
 import Sidebar from "./Sidebar";
 
 ChartJS.register(
@@ -95,17 +94,14 @@ const Dashboard = () => {
       <Header />
     <Sidebar>
       <div className="mt-4">
-        {/* <h2 className="text-center mb-4">Simple Dashboard</h2> */}
         <div className="row">
           <div className="col-md-4">
-            <div className="card">
+            <div className="card mb-3">
               <div className="card-body">
-                <h5 className="card-title">Sales Data</h5>
-                <Bar data={barData} options={options} />
+                <h5 className="card-title">Visitor Trends</h5>
+                <Line data={lineData} options={options} />
               </div>
             </div>
-          </div>
-          <div className="col-md-4">
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Visitor Trends</h5>
@@ -118,6 +114,14 @@ const Dashboard = () => {
               <div className="card-body">
                 <h5 className="card-title">Browser Usage</h5>
                 <Pie data={pieData} options={options} />
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Sales Data</h5>
+                <Bar data={barData} options={options} />
               </div>
             </div>
           </div>

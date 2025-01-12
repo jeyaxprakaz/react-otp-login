@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
       <footer
         className="text-light py-1"
         style={{ backgroundColor: "#1D7E7A" }}
